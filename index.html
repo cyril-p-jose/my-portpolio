@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cyril P Jose – B.Tech Computer Science Student at St.Joseph's College of Engineering and Technology. Explore my portfolio of creative digital experiences." />
+  <title>Cyril P Jose | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== CURSOR ===== -->
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <span class="loader-text">AM</span>
+      <div class="loader-bar">
+        <div class="loader-progress" id="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">CPJ<span class="dot">.</span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+      <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+      <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+      <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-hire" id="btn-hire-nav">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <canvas id="particle-canvas"></canvas>
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Available for freelance work
+      </div>
+      <h1 class="hero-title reveal">
+        Crafting <span class="gradient-text">Digital</span><br />
+        Experiences That<br />
+        <span class="gradient-text">Inspire.</span>
+      </h1>
+      <p class="hero-desc reveal">
+        I'm <strong>Cyril P Jose</strong>, B.Tech Computer Science Student at St.Joseph's College of Engineering and Technology,Palai,  passionate about building beautiful, performant web applications that users love.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn-primary" id="btn-view-work">View My Work</a>
+        <a href="#contact" class="btn-outline" id="btn-lets-talk">Let's Talk</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num" data-target="42">0</span><span class="stat-label">Projects Done</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="5">0</span><span class="stat-label">Years Exp.</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="30">0</span><span class="stat-label">Happy Clients</span></div>
+      </div>
+    </div>
+    <div class="hero-image reveal">
+      <div class="hero-card glass-card">
+        <div class="card-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-inner">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="45" r="25" fill="url(#grad1)" />
+              <ellipse cx="60" cy="100" rx="38" ry="28" fill="url(#grad2)" />
+              <defs>
+                <linearGradient id="grad1" x1="35" y1="20" x2="85" y2="70" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#a78bfa" />
+                  <stop offset="1" stop-color="#60a5fa" />
+                </linearGradient>
+                <linearGradient id="grad2" x1="22" y1="72" x2="98" y2="128" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#7c3aed" />
+                  <stop offset="1" stop-color="#2563eb" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Cyril P Jose</J></h3>
+          <p>B.Tech Computer Science Student</S></p>
+          <div class="card-tags">
+            <span>React</span><span>Node.js</span><span>UI/UX</span>
+          </div>
+        </div>
+        <div class="floating-badge badge-top">
+          <span>🚀</span> Open to Work
+        </div>
+        <div class="floating-badge badge-bottom">
+          <span>⭐</span> Top Rated
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2>About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="image-frame">
+            <div class="experience-badge">
+              <span class="exp-num">5+</span>
+              <span class="exp-label">Years of Experience</span>
+            </div>
+            <svg viewBox="0 0 300 350" fill="none" xmlns="http://www.w3.org/2000/svg" class="about-svg">
+              <rect x="0" y="0" width="300" height="350" rx="24" fill="url(#aboutBg)" />
+              <circle cx="150" cy="130" r="70" fill="url(#avatarGrad)" />
+              <ellipse cx="150" cy="290" rx="110" ry="75" fill="url(#bodyGrad)" />
+              <circle cx="150" cy="130" r="70" fill="url(#avatarGrad)" opacity="0.9" />
+              <defs>
+                <linearGradient id="aboutBg" x1="0" y1="0" x2="300" y2="350" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#1e1b4b" />
+                  <stop offset="1" stop-color="#0f172a" />
+                </linearGradient>
+                <linearGradient id="avatarGrad" x1="80" y1="60" x2="220" y2="200" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#a78bfa" />
+                  <stop offset="1" stop-color="#60a5fa" />
+                </linearGradient>
+                <linearGradient id="bodyGrad" x1="40" y1="215" x2="260" y2="365" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#7c3aed" />
+                  <stop offset="1" stop-color="#1d4ed8" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h3>Passionate about creating <span class="gradient-text">meaningful</span> digital solutions</h3>
+          <p>Hi! I'm Cyril , a developer and designer crafting web applications that blend great aesthetics with powerful functionality. I believe every pixel matters and every line of code should serve a purpose.</p>
+          <p>When I'm not coding, you'll find me exploring design trends, contributing to open source, or hiking in the mountains. I love turning complex problems into simple, beautiful solutions.</p>
+          <div class="about-details">
+            <div class="detail-item">
+              <span class="detail-icon">📍</span>
+              <div><strong>Location</strong><span>Piravom,Kerala</span></div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">🎓</span>
+              <div><strong>Education</strong><span>B.Tech Computer Science, SJCET</span></div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">💼</span>
+              <div><strong>Current Role</strong><span>First Year B.Tech Computer Science Student </span></div>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">🌐</span>
+              <div><strong>Languages</strong><span>English, Malayalam</span></div>
+            </div>
+          </div>
+          <a href="#" class="btn-primary" id="btn-download-cv" download>Download CV ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Do</span>
+        <h2>My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card glass-card reveal" id="skill-frontend">
+          <div class="skill-icon">🎨</div>
+          <h3>Frontend Development</h3>
+          <p>Building blazing-fast, accessible UIs with modern frameworks and tools.</p>
+          <div class="skill-tags">
+            <span>React</span><span>Vue.js</span><span>TypeScript</span><span>Next.js</span>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal" id="skill-backend">
+          <div class="skill-icon">⚙️</div>
+          <h3>Backend Development</h3>
+          <p>Designing scalable APIs and server architectures for high-traffic apps.</p>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Python</span><span>PostgreSQL</span><span>GraphQL</span>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal" id="skill-design">
+          <div class="skill-icon">✏️</div>
+          <h3>UI/UX Design</h3>
+          <p>Creating intuitive, user-centered interfaces with a focus on delight.</p>
+          <div class="skill-tags">
+            <span>Figma</span><span>Framer</span><span>Prototyping</span><span>Design Systems</span>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal" id="skill-mobile">
+          <div class="skill-icon">📱</div>
+          <h3>Mobile Development</h3>
+          <p>Cross-platform apps with native performance and smooth animations.</p>
+          <div class="skill-tags">
+            <span>React Native</span><span>Flutter</span><span>iOS</span><span>Android</span>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal" id="skill-cloud">
+          <div class="skill-icon">☁️</div>
+          <h3>Cloud & DevOps</h3>
+          <p>Deploying, scaling, and managing production-grade cloud infrastructure.</p>
+          <div class="skill-tags">
+            <span>AWS</span><span>Docker</span><span>CI/CD</span><span>Kubernetes</span>
+          </div>
+        </div>
+        <div class="skill-card glass-card reveal" id="skill-ai">
+          <div class="skill-icon">🤖</div>
+          <h3>AI & Machine Learning</h3>
+          <p>Integrating intelligent features using modern ML APIs and models.</p>
+          <div class="skill-tags">
+            <span>TensorFlow</span><span>OpenAI</span><span>LangChain</span><span>Python</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proficiency Bars -->
+      <div class="proficiency reveal">
+        <h3>Proficiency <span class="gradient-text">Levels</span></h3>
+        <div class="prof-list">
+          <div class="prof-item">
+            <div class="prof-header"><span>JavaScript / TypeScript</span><span>95%</span></div>
+            <div class="prof-bar">
+              <div class="prof-fill" data-width="95"></div>
+            </div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header"><span>React / Next.js</span><span>92%</span></div>
+            <div class="prof-bar">
+              <div class="prof-fill" data-width="92"></div>
+            </div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header"><span>Node.js / Python</span><span>88%</span></div>
+            <div class="prof-bar">
+              <div class="prof-fill" data-width="88"></div>
+            </div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header"><span>UI/UX Design</span><span>85%</span></div>
+            <div class="prof-bar">
+              <div class="prof-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-header"><span>Cloud / DevOps</span><span>78%</span></div>
+            <div class="prof-bar">
+              <div class="prof-fill" data-width="78"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">My Work</span>
+        <h2>Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+        <button class="filter-btn" data-filter="web" id="filter-web">Web Apps</button>
+        <button class="filter-btn" data-filter="mobile" id="filter-mobile">Mobile</button>
+        <button class="filter-btn" data-filter="design" id="filter-design">Design</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card glass-card reveal" data-category="web" id="proj-1">
+          <div class="project-image" style="background: linear-gradient(135deg, #7c3aed, #2563eb);">
+            <div class="project-overlay">
+              <a href="#" class="proj-link" id="proj-1-demo">Live Demo ↗</a>
+              <a href="#" class="proj-link" id="proj-1-code">Source Code</a>
+            </div>
+            <div class="proj-mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-content">
+                <div class="mc-line w80"></div>
+                <div class="mc-line w60"></div>
+                <div class="mc-grid">
+                  <div class="mc-block"></div>
+                  <div class="mc-block"></div>
+                  <div class="mc-block"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="proj-tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+            <h3>NexaFlow Dashboard</h3>
+            <p>An advanced analytics dashboard with real-time data visualization and AI-powered insights for enterprise teams.</p>
+            <div class="proj-meta">
+              <span>⭐ 248 stars</span>
+              <span>🔗 Live</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" data-category="mobile" id="proj-2">
+          <div class="project-image" style="background: linear-gradient(135deg, #0f766e, #0369a1);">
+            <div class="project-overlay">
+              <a href="#" class="proj-link" id="proj-2-demo">Live Demo ↗</a>
+              <a href="#" class="proj-link" id="proj-2-code">Source Code</a>
+            </div>
+            <div class="proj-mockup mobile-mockup">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="mc-line w70"></div>
+                  <div class="mc-line w50"></div>
+                  <div class="mc-block full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="proj-tags"><span>React Native</span><span>Firebase</span></div>
+            <h3>Pulse Health App</h3>
+            <p>A wellness tracking app with personalized AI coaching, nutrition logs, and workout planning for iOS & Android.</p>
+            <div class="proj-meta">
+              <span>⭐ 189 stars</span>
+              <span>📱 App Store</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" data-category="web" id="proj-3">
+          <div class="project-image" style="background: linear-gradient(135deg, #be185d, #7c2d12);">
+            <div class="project-overlay">
+              <a href="#" class="proj-link" id="proj-3-demo">Live Demo ↗</a>
+              <a href="#" class="proj-link" id="proj-3-code">Source Code</a>
+            </div>
+            <div class="proj-mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-content">
+                <div class="mc-line w90"></div>
+                <div class="mc-line w70"></div>
+                <div class="mc-block full"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="proj-tags"><span>Next.js</span><span>Stripe</span><span>Prisma</span></div>
+            <h3>ShopVerse E-Commerce</h3>
+            <p>A feature-rich e-commerce platform with seamless payments, inventory management, and an AI recommendation engine.</p>
+            <div class="proj-meta">
+              <span>⭐ 312 stars</span>
+              <span>🔗 Live</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" data-category="design" id="proj-4">
+          <div class="project-image" style="background: linear-gradient(135deg, #d97706, #b45309);">
+            <div class="project-overlay">
+              <a href="#" class="proj-link" id="proj-4-demo">View Case Study ↗</a>
+              <a href="#" class="proj-link" id="proj-4-figma">Figma File</a>
+            </div>
+            <div class="proj-mockup">
+              <div class="design-preview">
+                <div class="dp-circle" style="background:#fbbf24"></div>
+                <div class="dp-circle" style="background:#f59e0b; margin-left:-12px"></div>
+                <div class="dp-lines">
+                  <div class="mc-line w80"></div>
+                  <div class="mc-line w60"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="proj-tags"><span>Figma</span><span>UI/UX</span><span>Branding</span></div>
+            <h3>Aura Design System</h3>
+            <p>A comprehensive design system with 200+ components, detailed guidelines, and a living Storybook documentation.</p>
+            <div class="proj-meta">
+              <span>⭐ 540 stars</span>
+              <span>🎨 Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" data-category="web" id="proj-5">
+          <div class="project-image" style="background: linear-gradient(135deg, #065f46, #1e3a5f);">
+            <div class="project-overlay">
+              <a href="#" class="proj-link" id="proj-5-demo">Live Demo ↗</a>
+              <a href="#" class="proj-link" id="proj-5-code">Source Code</a>
+            </div>
+            <div class="proj-mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-content">
+                <div class="mc-line w60"></div>
+                <div class="mc-grid">
+                  <div class="mc-block"></div>
+                  <div class="mc-block"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="proj-tags"><span>Vue.js</span><span>Python</span><span>OpenAI</span></div>
+            <h3>ClearMind AI Journal</h3>
+            <p>An AI-powered journaling platform that provides sentiment analysis, mood tracking, and personalized insights.</p>
+            <div class="proj-meta">
+              <span>⭐ 173 stars</span>
+              <span>🔗 Live</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card reveal" data-category="mobile" id="proj-6">
+          <div class="project-image" style="background: linear-gradient(135deg, #4f46e5, #7c3aed);">
+            <div class="project-overlay">
+              <a href="#" class="proj-link" id="proj-6-demo">Live Demo ↗</a>
+              <a href="#" class="proj-link" id="proj-6-code">Source Code</a>
+            </div>
+            <div class="proj-mockup mobile-mockup">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="mc-line w80"></div>
+                  <div class="mc-block full"></div>
+                  <div class="mc-line w50"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="proj-tags"><span>Flutter</span><span>Dart</span><span>Supabase</span></div>
+            <h3>TaskFlow Pro</h3>
+            <p>A productivity powerhouse featuring smart task scheduling, team collaboration, and deep calendar integrations.</p>
+            <div class="proj-meta">
+              <span>⭐ 421 stars</span>
+              <span>📱 Play Store</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Kind Words</span>
+        <h2>What Clients <span class="gradient-text">Say</span></h2>
+      </div>
+      <div class="testimonial-slider reveal">
+        <div class="testimonial-track" id="testimonial-track">
+          <div class="testimonial-card glass-card">
+            <div class="quote-icon">"</div>
+            <p>Alex is an absolute rockstar. They delivered our platform ahead of schedule with zero bugs. The code quality and UI polish were beyond our expectations.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#a78bfa,#60a5fa)">SR</div>
+              <div>
+                <strong>Sarah Richardson</strong>
+                <span>CEO, NovaTech Inc.</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="quote-icon">"</div>
+            <p>Working with Alex was one of the best decisions we made. Their expertise in both design and development saved us months of back-and-forth. Truly end-to-end talent.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#34d399,#3b82f6)">MJ</div>
+              <div>
+                <strong>Marcus Johnson</strong>
+                <span>CTO, Pulse Digital</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="quote-icon">"</div>
+            <p>Our e-commerce conversion rate jumped 40% after Alex rebuilt our platform. Their data-driven approach to UX combined with technical mastery is rare and invaluable.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#fb7185,#f97316)">LP</div>
+              <div>
+                <strong>Lisa Park</strong>
+                <span>Founder, ShopVerse</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-nav">
+          <button class="t-nav-btn" id="t-prev" aria-label="Previous">&#8592;</button>
+          <div class="t-dots" id="t-dots">
+            <span class="t-dot active"></span>
+            <span class="t-dot"></span>
+            <span class="t-dot"></span>
+          </div>
+          <button class="t-nav-btn" id="t-next" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Let's Build Something <span class="gradient-text">Amazing</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p>Have a project in mind? I'd love to hear about it. Drop me a message and I'll get back to you within 24 hours.</p>
+          <div class="contact-items">
+            <a href="mailto:cyrilpjose2025@gmail.com" class="contact-item" id="contact-email">
+              <div class="c-icon">📧</div>
+              <div><strong>Email</strong><span>cyrilpjose2025@gmail.com</span></div>
+            </a>
+            <a href="tel:+11234567890" class="contact-item" id="contact-phone">
+              <div class="c-icon">📞</div>
+              <div><strong>Phone</strong><span>+1 (123) 456-7890</span></div>
+            </a>
+            <div class="contact-item" id="contact-location-div">
+              <div class="c-icon">📍</div>
+              <div><strong>Location</strong><span>San Francisco, CA</span></div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn" id="social-github" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn" id="social-linkedin" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn" id="social-twitter" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.213 5.567 5.951-5.567zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="#" class="social-btn" id="social-dribbble" aria-label="Dribbble">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4.006-.814zm-11.62-2.073c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.176zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.46 0-.92.037-1.4.087zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.316-6.386z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form glass-card reveal" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="input-name">Name</label>
+              <input type="text" id="input-name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="input-email">Email</label>
+              <input type="email" id="input-email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="input-subject">Subject</label>
+            <input type="text" id="input-subject" name="subject" placeholder="Project Inquiry" />
+          </div>
+          <div class="form-group">
+            <label for="input-message">Message</label>
+            <textarea id="input-message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width" id="btn-send-msg">
+            <span id="btn-send-text">Send Message 🚀</span>
+          </button>
+          <div class="form-success" id="form-success">
+            <span>✅ Message sent! I'll get back to you soon.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">AM<span class="dot">.</span></div>
+        <p>Building digital experiences that matter.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Alex Morgan. Crafted with ❤️ & lots of ☕</p>
+        <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
